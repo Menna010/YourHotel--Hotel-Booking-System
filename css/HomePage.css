@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap');
+/* =========================
+   Section 1: Header
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* =========================
+   Section 1: Header
+   ========================= */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #5A0506;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    height: 56px;
+     margin-top: -20px;
+}
+
+.logo img {
+    width: 90px;
+    height: 70px;
+
+    object-fit: contain;
+    display: block;
+
+    margin-left: 0;
+}
+
+.logo span {
+    font-family: "Inria Serif", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-item {
+    width: 54px;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: -20px;
+}
+
+.nav-icon {
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    width: 54px;
+    height: 17px;
+
+    text-align: center;
+
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+/* =========================
+   Section 2: Search Bar
+   ========================= */
+
+.search-section {
+    position: relative;
+    width: 100%;
+    height: 95px;
+
+    display: flex;
+    justify-content: center;
+    transform: translateY(-25px);
+
+}
+
+.search-bar {
+    width: 960px;
+    height: 70px;
+
+    background-color: #D7C6BD;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    margin-top: 3px;
+}
+
+.search-item {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Inria Serif", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+
+    white-space: nowrap;
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+    display: block;
+
+    margin-right: 10px;
+
+    flex-shrink: 0;
+}
+
+.divider {
+    width: 1px;
+    height: 20px;
+
+    background-color: #000000;
+
+    margin: 0 25px;
+
+    flex-shrink: 0;
+}
+
+.search-button {
+    width: 129px;
+    height: 41px;
+
+    margin-left: 50px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #5A0506;
+    color: #FFFFFF;
+
+    font-family: "Inria Serif", serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.575);
+
+    flex-shrink: 0;
+
+    transition: all 0.2s ease;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:active {
+    transform: scale(0.92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter {
+    width: 32px;
+    height: 32px;
+
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.filter img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================
+   Section 3: Trending Destinations
+   ========================= */
+
+.trending-section {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.trending-section h2 {
+    margin: 0 0 15px 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5A0506;
+}
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+.destination-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.destination-card {
+    position: relative;
+
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.destination-card.tall {
+    height: 418px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.destination-name {
+    position: absolute;
+
+    top: 8px;
+    left: 8px;
+
+    padding: 6px 16px;
+
+    background-color: rgba(90, 5, 6, 0.75);
+    
+
+    border-radius: 12px;
+
+    font-family: "Inria Serif", serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #FFFFFF;
+}
+
+/* =========================
+   Section 4: Featured Hotels
+   ========================= */
+
+.featured-section {
+    width: 100%;
+    padding: 25px 48px 50px 48px;
+    box-sizing: border-box;
+}
+
+.featured-section h2 {
+    margin: 0 0 15px 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5A0506;
+}
+
+.hotel-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.hotel-card {
+
+    background-color:#EDE4E1;
+
+    width: 620px;
+    height: 520px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+.hotel-image-container {
+    position: relative;
+
+    width: 100%;
+    height: 320px;
+
+    border-radius: 0;
+
+    overflow: hidden;
+}
+
+.hotel-image-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.favorite-button {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 28px;
+    height: 28px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #FFFFFF;
+
+    font-size: 18px;
+
+    color: #5A0506;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.hotel-info {
+    padding: 10px 20px 5px 20px;
+
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hotel-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hotel-title-row h3 {
+    margin: 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+.hotel-price {
+    font-family: "Inria Serif", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #5A0506;
+}
+
+.price-period {
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+.hotel-price-group {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+    white-space: nowrap;
+}
+
+.hotel-meta {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    
+
+    margin-top: 5px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    color: #555555;
+}
+
+.rating {
+    font-weight: 700;
+    color: #000000;
+}
+
+.star {
+    color: #F4B400;
+}
+
+.hotel-description {
+    margin: 6px 0 10px 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #555555;
+}
+
+.hotel-bottom {
+    display: flex;
+    align-items: center;
+
+    margin-top: auto;
+}
+
+.details-button {
+    width: 120px;
+    height: 40px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #5A0506;
+    color: #FFFFFF;
+
+    font-family: "Inria Serif", serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.575);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.details-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.details-button:active {
+    transform: scale(0.92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+
