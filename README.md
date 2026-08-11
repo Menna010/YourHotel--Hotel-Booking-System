@@ -4,6 +4,9 @@ YourHotel is a hotel booking website designed to provide users with a simple and
 
 The project is currently **in development**. The current version focuses on implementing the main UI design from the Figma prototype into HTML and CSS and connecting the main booking flow between pages.
 
+# Figma Design Link
+https://www.figma.com/design/GOuhgK6AxFve8C1NxLFFH0/YourHotel?node-id=0-1&t=AnM66wGbWbEewI31-1 
+
 ---
 
 ## Project Status
