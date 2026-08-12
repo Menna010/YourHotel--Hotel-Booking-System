@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* =========================
+   Section 1: Header
+   ========================= */
+
+
+.print-logo {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #5A0506;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    height: 56px;
+}
+
+.logo img {
+    width: 90px;
+    height: 70px;
+
+    object-fit: contain;
+    display: block;
+
+    margin-left: 0;
+}
+
+.logo span {
+    font-family: "Inria Serif", serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-item {
+    width: 54px;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-icon {
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    width: 54px;
+    height: 17px;
+
+    text-align: center;
+
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* =========================
+Section 2: Confirmation Header
+========================= */
+
+.confirmation-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 70px;
+    text-align: center;
+}
+
+.confirmation-icon {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background-color: #F5EEEE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+    color: #5A0506;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-header h1 {
+    margin: 0 0 6px 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+.confirmation-header p {
+    margin: 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+
+    color: #777777;
+}
+
+.confirmation-header p strong {
+    color: #333333;
+    font-weight: 700;
+}
+
+/* =========================
+Section 3: Booking Summary
+========================= */
+
+.confirmation-summary {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.summary-card {
+    width: 650px;
+    min-height: 250px;
+
+    background-color: #F3ECEA;
+
+    border-radius: 22px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.summary-label {
+    margin-bottom: 5px;
+
+    font-family: "Inria Serif", serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #777777;
+}
+
+.summary-card h2 {
+    margin: 0 0 3px 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+.summary-location {
+    margin: 0;
+
+    font-family: "Inria Serif", serif;
+    font-size: 12px;
+
+    color: #777777;
+}
+
+.summary-divider {
+    width: 100%;
+    height: 1px;
+
+    background-color: #D8CCCA;
+
+    margin: 12px 0;
+}
+
+.summary-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+    row-gap: 9px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-item span {
+    margin-bottom: 2px;
+
+    font-family: "Inria Serif", serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    color: #777777;
+}
+
+.summary-item strong {
+    font-family: "Inria Serif", serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+.amount-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount-row span {
+    font-family: "Inria Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+.amount-row strong {
+    font-family: "Inria Serif", serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #5A0506;
+}
+
+/* =============================
+Section 4: Confirmation Actions
+================================= */
+
+.confirmation-actions {
+    width: 480px;
+
+    display: flex;
+    gap: 12px;
+
+    margin: 22px auto 0;
+}
+
+.print-button,
+.home-button {
+    flex: 1;
+    height: 36px;
+
+    border-radius: 20px;
+
+    font-family: "Inria Serif", serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.print-button {
+    border: none;
+
+    background-color: #5A0506;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.20);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.print-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.print-button:active,
+.print-button.pressed {
+    transform: scale(0.92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.home-button {
+    flex: 1;
+    height: 36px;
+
+    border-radius: 20px;
+
+    font-family: "Inria Serif", serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    border: 1px solid #5A0506;
+
+    background-color: #FFFFFF;
+    color: #5A0506;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.home-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media print {
+
+    /* Hide the website navigation */
+    .header {
+        display: none;
+    }
+
+    /* Hide the screen buttons */
+    .confirmation-actions {
+        display: none;
+    }
+
+    /* Show print logo */
+    .print-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .print-logo img {
+        width: 70px;
+        height: 55px;
+        object-fit: contain;
+    }
+
+    .print-logo span {
+        font-family: "Inria Serif", serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #5A0506;
+    }
+
+    /* Keep only the receipt content */
+    body {
+        background: white;
+    }
+}
